@@ -197,7 +197,7 @@ public class ManterFilmesController {
 	@RequestMapping("/baixar_lancamentos")
 	public String baixarLancamentos() {
 		try {
-			fService.baixarFilmesMaisPopulares();
+			fService.baixarLancamentos();
 			return "ListarFilmes";
 		} catch (IOException e) {
 			e.printStackTrace();
